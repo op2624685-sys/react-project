@@ -1,34 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div>
+      <h2>My TO-DO List</h2>
+      <div className="container">
+      <div id="cards">
+        <div id="card-1" className="cards">
+          <h3>Task 1</h3>
+          <p>This is the first task.</p>
+        </div>
+        <div id="card-2" className="cards">
+          <h3>Task 2</h3>
+          <p>This is the second task.</p>
+        </div>
+        <div id="card-3" className="cards">
+          <h3>Task 3</h3>
+          <p>This is the third task.</p>
+        </div>
+        <div id="card-4" className="cards">
+          <h3>Task 4</h3>
+          <p>This is the fourth task.</p>
+        </div>
+        <div id="card-5" className="cards">
+          <h3>Task 5</h3>
+          <p>This is the fifth task.</p>
+        </div>
+        <div id="card-6" className="cards">
+          <h3>Task 6</h3>
+          <p>This is the sixth task.</p>
+        </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
