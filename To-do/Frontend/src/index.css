@@ -50,16 +50,33 @@ h2 {
   display: inline-table;
   flex-direction: column;
 }
+.card:hover{
+  box-shadow: 0 0 15px rgba(154, 221, 139, 0.8);
+  animation: zoom 0.3s ease-in-out forwards;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-out;
+  @keyframes zoom {
+    0% { transform: scale(0.5); }
+    100% { transform: scale(1.05); }
+  }
+}
 
 .card p {
+  font-size: 25px;
   color: rgb(154, 221, 139);
   margin: auto;
 }
 
+button {
+  font-size: 20px;
+  height: 40px;
+  width: 75px;
+  margin: 5px;
+  padding: 2px;
+}
+
 #delete-btn {
   margin-top: 10px;
-  height: 30px;
-  width: 50px;
   margin-right: 5px;
   border: none;
   border-radius: 5px;
@@ -69,8 +86,6 @@ h2 {
 }
 #delete-btn:hover {
   margin-top: 10px;
-  height: 30px;
-  width: 50px;
   margin-right: 5px;
   border: none;
   border-radius: 5px;
@@ -81,8 +96,6 @@ h2 {
 
 #edit-btn {
   margin-top: 10px;
-  height: 30px;
-  width: 50px;
   margin-right: 5px;
   border: none;
   border-radius: 5px;
@@ -92,8 +105,6 @@ h2 {
 }
 #edit-btn:hover{
   margin-top: 10px;
-  height: 30px;
-  width: 50px;
   margin-right: 5px;
   border: none;
   border-radius: 5px;

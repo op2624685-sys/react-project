@@ -1,10 +1,10 @@
 // import React from 'react'
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div className="card">
-        <h3>Sample To-Do Item</h3>
-        <p>This is a description of the to-do item.</p>
+        <h3>{props.time}</h3>
+        <p>{props.work}</p>
         <button id="delete-btn" type="button">Delete</button>
         <button id="edit-btn" type="button">Edit</button>
     </div>
