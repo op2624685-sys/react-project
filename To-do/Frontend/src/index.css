@@ -21,10 +21,10 @@ body {
   margin-top: 50px;
   padding: 10px;
   width: 1200px;
+  flex-wrap: wrap;
 }
 
 h2 {
-  border: 2px solid rgb(143, 135, 135);
   display: flex;
   justify-content: center;
   height: 80px;
@@ -32,21 +32,72 @@ h2 {
   padding: 10px 15px;
   margin-top: 50px;
   border-radius: 5px;
+  color: #000000;
   background-color: #ebe4e4;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 25px rgba(250, 247, 247, 0.8);
   font-size: 45px;
 }
 
-.cards {
-  background-color: #f5f5f5;
-  color: #52a7b6;
+.card {
+  background-color: #121010;
+  color: #95d7e3;
   height: 100px;
   width: 350px;
   margin: 20px;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  display: inline-block;
+  box-shadow: 0 0 10px rgba(54, 239, 73, 0.8);
+  display: inline-table;
+  flex-direction: column;
 }
 
+.card p {
+  color: rgb(154, 221, 139);
+  margin: auto;
+}
 
+#delete-btn {
+  margin-top: 10px;
+  height: 30px;
+  width: 50px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3ed85d;
+  color: #ffffff;
+  cursor: pointer;
+}
+#delete-btn:hover {
+  margin-top: 10px;
+  height: 30px;
+  width: 50px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #900505;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#edit-btn {
+  margin-top: 10px;
+  height: 30px;
+  width: 50px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #a74119;
+  color: #ffffff;
+  cursor: pointer;
+}
+#edit-btn:hover{
+  margin-top: 10px;
+  height: 30px;
+  width: 50px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4a382d;
+  color: #ffffff;
+  cursor: pointer;
+}
