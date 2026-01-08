@@ -75,6 +75,16 @@ button {
   padding: 2px;
 }
 
+#done-btn {
+  display: inline;
+  margin-top: 10px;
+  margin-right: 5px;
+  border-radius: 70%;
+  background-color: #3ed85d;
+  color: #ffffff;
+  cursor: pointer;
+}
+
 #delete-btn {
   margin-top: 10px;
   margin-right: 5px;

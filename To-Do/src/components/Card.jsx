@@ -1,10 +1,12 @@
 // import React from 'react'
+import { Check } from 'lucide-react';
 
 const Card = (props) => {
   return (
     <div className="card">
         <h3>{props.time}</h3>
         <p>{props.work}</p>
+        <button id="done-btn">Done <Check /> </button>
         <button id="delete-btn" type="button">Delete</button>
         <button id="edit-btn" type="button">Edit</button>
     </div>
