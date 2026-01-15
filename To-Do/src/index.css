@@ -65,6 +65,7 @@ h2 {
   font-size: 25px;
   color: rgb(154, 221, 139);
   margin: auto;
+  display: inline-block;
 }
 
 button {
@@ -76,11 +77,8 @@ button {
 }
 
 #done-btn {
-  display: inline;
-  margin-top: 10px;
-  margin-right: 5px;
-  border-radius: 70%;
-  background-color: #3ed85d;
+  border-radius: 30%;
+  background-color: #000000;
   color: #ffffff;
   cursor: pointer;
 }
