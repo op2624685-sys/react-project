@@ -7,7 +7,7 @@ const Card = (props) => {
       <h3>{props.time}</h3>
       <div>
         <p>{props.work}</p>
-        <button id="done-btn"><Check /></button>
+        <button id="done-btn" type="button"><Check/></button>
       </div>
       <button id="delete-btn" type="button">Delete</button>
       <button id="edit-btn" type="button">Edit</button>
